@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Prediccion de Especie</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Prediccion de Especie</h1>
+    <form action="/predict" method="post">
+
+      <label for="SepalLengthCm">SepalLengthCm:</label>
+      <input name="SepalLengthCm" id="SepalLengthCm" required></input>
+      <br><br>
+
+      <label for="SepalWidthCm">SepalWidthCm</label>
+      <input name="SepalWidthCm" id="SepalWidthCm" required></input>
+      <br><br>
+
+      <label for="PetalLengthCm">PetalLengthCm</label>
+      <input name="PetalLengthCm" id="PetalLengthCm" required></input>
+      <br><br>
+
+      <label for="PetalWidthCm">PetalWidthCm</label>
+      <input name="PetalWidthCm" id="PetalWidthCm" required></input>
+      <br><br>
+
+      <button type="submit">Realizar prediccion</button>
+    </form>
+  </div>
+</body>
+</html>
